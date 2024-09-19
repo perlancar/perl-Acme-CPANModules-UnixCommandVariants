@@ -18,13 +18,33 @@ MARKDOWN
             module => 'App::prefixcat',
             script => 'prefixcat',
             'x.command' => 'cat',
+            summary => 'A `cat` variant that print filename at the start of each output line (can also print other prefix)',
         },
 
-        # cat
+        # find
+        {
+            module => 'App::findsort',
+            script => 'findsort',
+            'x.command' => 'find',
+            'x.is_wrapper' => 1,
+            summary => 'A `find` variant (actually wrapper) that can sort its output',
+        },
+
+        # rsync
+        {
+            module => 'App::rsynccolor',
+            script => 'rsynccolor',
+            'x.command' => 'rsync',
+            'x.is_wrapper' => 1,
+            summary => 'An `rsync` variant (actually wrapper) that colors its output for visual hints',
+        },
+
+        # uniq
         {
             module => 'App::nauniq',
             script => 'nauniq',
             'x.command' => 'uniq',
+            summary => 'A `uniq` variant that can remember non-adjacent duplicate lines',
         },
     ],
 };
