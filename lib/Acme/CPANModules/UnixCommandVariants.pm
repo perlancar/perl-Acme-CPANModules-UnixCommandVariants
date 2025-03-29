@@ -29,6 +29,13 @@ MARKDOWN
             'x.is_wrapper' => 1,
             summary => 'A `find` variant (actually wrapper) that can sort its output',
         },
+        {
+            module => 'App::finddo',
+            script => 'finddo',
+            'x.command' => 'find',
+            'x.is_wrapper' => 1,
+            summary => 'Another experimental `find` variant; project currently stalled, see App::FileSortUtils for alternatives',
+        },
 
         # rsync
         {
